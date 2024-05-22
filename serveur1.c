@@ -16,6 +16,8 @@
 #include <signal.h>
 #include "tresor.h"
 #include <string.h>
+#include <time.h>
+
 
 
 char buffer[512];
@@ -25,14 +27,15 @@ int main ( void )
 {
     int client_socket;
     struct sockaddr_in mon_address, client_address;
-    int mon_address_longueur, lg;
+    int mon_address_longueur;
     int x_tresor = 4, y_tresor = 5;
     int xp, yp;
 
 
-    //     srand(time(NULL));
-    //     x_tresor = 1 + rand()%N;
-    //     y_tresor = 1 + rand()%N;
+    // pour randomiser les coordonnées du trésor
+    // srand(time(NULL));
+    // x_tresor = 1 + rand()%10;
+    // y_tresor = 1 + rand()%10;
 
 
     int res;

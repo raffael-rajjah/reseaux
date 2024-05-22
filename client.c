@@ -73,11 +73,11 @@ int main(int argc, char **argv) {
 
     /* Init args */
 
-    char *server_name = SERVEURNAME;
+
     struct sockaddr_in serverSockAddr;
-    struct hostent *serverHostEnt;
+
     long hostAddr;
-    long status;
+
     char buffer[512]; 
 
     /* Init jeu */
